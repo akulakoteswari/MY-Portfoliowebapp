@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+    font-family: Arial, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  
+  h1, h2, h3 {
+    font-family: "Arial Black", sans-serif;
+  }
+  
+  h1 {
+    font-size: 3em;
+  }
+  
+  h2 {
+    font-size: 2.5em;
+    color: #ffc107;
+  }
+  
+  h3 {
+    font-size: 2em;
+  }
+  
+  #about h2,
+  #contact h2,
+  #certifications h2 {
+    text-align: center;
+    font-size: 3em; /* Increase font size for the headings */
+    margin-bottom: 1em;
+  }
+  
+  #about h3,
+  #contact h3,
+  #certifications h3 {
+    text-align: center;
+    font-size: 2.5em; /* Increase font size for the subheadings */
+    margin-bottom: 1em;
+  }
+  
+  nav {
+    background: #000;
+    padding: 1em 0em;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-size: 1.3em;
+    font-family: "Arial Black", sans-serif;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin: 0 1em;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background: #ffc107;
+    color: #000;
+    border-radius: 15px;
+  }
+  
+  section {
+    padding: 5em 2em 2em; /* Add padding-top to make space for fixed nav */
+    text-align: center;
+  }
+  
+  #home .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  #home h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+  
+  #home h2 {
+    font-size: 2em;
+    margin-bottom: 3em;
+    color: #ffc107;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.5em 2em;
+    background: #ffc107;
+    color: #000;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #777;
+  }
+  
+  #about {
+    text-align: left;
+    margin-bottom: 1em;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #555;
+  }
+  
+  .about-content img {
+    max-width: 400px;
+    height: 550px;
+    margin-right: 2em;
+    border-radius: 20px;
+  }
+  
+  .about-text {
+    max-width: 600px;
+    font-size: 1.2em;
+  }
+  
+  .about-text p {
+    margin-bottom: 1em;
+  }
+  
+  .label {
+    color: #fff; /* White color for label */
+  }
+  
+  .value {
+    color: #555; 
+  }
+  
+  #skills {
+    text-align: center;
+  }
+  
+  .skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .skill {
+    background-color: #f6ededf4;
+    border: 1px solid #000;
+    color: #fff;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 0.5em;
+    width: 200px;
+    margin-bottom: 20px; 
+    flex-basis: calc(33.33% - 20px); /* Set width for each card */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #skills h2 {
+    margin-bottom: 40px;
+  }
+  
+  .skill i {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color: #000;
+  }
+  
+  .skill h3 {
+    margin-bottom: 0.5em;
+    color: #000;
+  }
+  
+  .skill p {
+    font-size: 0.9em;
+    color: #000;
+  }
+  
+  .skill:hover {
+    transform: scale(1.05); /* Zoom effect */
+    transition: transform 0.3s ease; 
+    z-index: 1; 
+  }
+  
+  #certifications .certifications-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .certification {
+    margin: 1em;
+    text-align: left;
+  }
+  
+  .certification img {
+    max-width: 300px;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    transition: transform 0.3s;
+  }
+  
+  .certification img:hover {
+    transform: scale(2.1); /* Increase the size of the image on hover */
+  }
+  
+  .certification p {
+    margin-bottom: 0.5em;
+  }
+  
+  #contact {
+    text-align: center;
+    margin-bottom: 300px;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .contact-item {
+    margin: 0 20px;
+  }
+  
+  .contact-item i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    border-radius: 50%; /* Make the icon circular */
+    padding: 50px; /* Add padding to maintain the circular shape */
+    background-color: #333; /* Add a background color to the icon */
+    color: #fff; /* Set the icon color */
+    border: #ffc107;
+  }
+  
+  .contact-item h4 {
+    margin-bottom: 6px;
+    font-size: 1.2em;
+  }
+  
+  .contact-item a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .contact-item a:hover {
+    transform: scale(1.1);
+  }
+  
+  .contact-item p {
+    font-size: 1em;
+  }
+  
+    
