@@ -55,7 +55,7 @@
     font-size: 2.5em;
     margin-bottom: 1em;
 }
-  nav {
+  nav.top-nav {
     background: #000;
     padding: 1em 0em;
     text-align: center;
@@ -289,30 +289,86 @@
   .contact-item p {
     font-size: 1em;
   }
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #333;
+    color: #fff;
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+}
+  
+.side-nav {
+    position: fixed;
+    right: -250px; /* Hidden by default */
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background: #333;
+    z-index: 2000;
+    padding: 2em 1em;
+    transition: right 0.3s;
+    overflow-y: auto;
+}
+  
+.side-nav.open {
+    right: 0;
+}
+  
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.side-nav ul li {
+    margin: 1em 0;
+}
+  
+.side-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+  
+.side-nav ul li a:hover {
+    background: #ffc107;
+    color: #000;
+    border-radius: 15px;
+}
+  
+.side-nav-toggle {
+    display: none;
+    position: fixed;
+    right: 1em;
+    top: 1em;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 2001;
+}
+  
+.side-nav-toggle i {
+    font-size: 1.5em;
+}
+  
 @media (max-width: 768px) {
-    .about-content {
-        flex-direction: column;
-        text-align: center;
+    .side-nav-toggle {
+        display: block;
     }
-
-    .about-content img {
-        margin: 0 0 2em 0;
-        width: 80%; /* Adjusting the width */
-    }
-
-    .about-text {
-        max-width: 100%;
-    }
-
-    .skills-content {
-        justify-content: center;
-    }
-
-    .skill {
-        flex-basis: calc(50% - 20px);
+  
+    nav.top-nav {
+        display: none; /* Hide the top nav on small screens */
     }
 }
-
 
 
  
