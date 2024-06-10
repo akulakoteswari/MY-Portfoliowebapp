@@ -295,36 +295,37 @@ footer {
     padding: 1em 0;
     background: #333;
     color: #fff;
-    position: fixed; 
-    bottom: 0; 
-    width: 100%; 
+   
 }
   
 .side-nav {
-    position: fixed;
-    right: -250px; /* Hidden by default */
-    top: 0;
     height: 100%;
     width: 250px;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: -250px;
     background: #333;
-    z-index: 2000;
-    padding: 2em 1em;
-    transition: right 0.3s;
+    transition:  0.5s;
     overflow-y: auto;
 }
   
 .side-nav.open {
-    right: 0;
+    left: 0;
 }
   
 .side-nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
   
 .side-nav ul li {
-    margin: 1em 0;
+      padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
 }
   
 .side-nav ul li a {
@@ -332,32 +333,35 @@ footer {
     text-decoration: none;
     display: block;
     padding: 0.5em 1em;
-    border-radius: 5px;
-    transition: background 0.3s;
+   
 }
   
 .side-nav ul li a:hover {
     background: #ffc107;
     color: #000;
-    border-radius: 15px;
+ 
 }
   
 .side-nav-toggle {
-    display: none;
-    position: fixed;
-    right: 1em;
-    top: 1em;
-    background: #333;
-    color: #fff;
+      position: fixed;
+    top: 20px;
+    left: 20px; /* Position the toggle button on the left side */
+    z-index: 1002;
+    font-size: 30px;
+    background-color: transparent;
     border: none;
-    padding: 1em;
-    border-radius: 5px;
+    color: #818181;
     cursor: pointer;
-    z-index: 2001;
+}
+.side-nav-toggle:focus {
+    outline: none;
 }
   
 .side-nav-toggle i {
     font-size: 1.5em;
+}
+.side-nav-toggle:hover {
+    color: #f1f1f1;
 }
   
 @media (max-width: 768px) {
