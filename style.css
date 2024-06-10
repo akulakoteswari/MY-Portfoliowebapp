@@ -343,7 +343,7 @@ footer {
 }
   
 .side-nav-toggle {
-      position: fixed;
+    position: fixed;
     top: 20px;
     left: 20px; /* Position the toggle button on the left side */
     z-index: 1002;
@@ -357,9 +357,7 @@ footer {
     outline: none;
 }
   
-.side-nav-toggle i {
-    font-size: 1.5em;
-}
+
 .side-nav-toggle:hover {
     color: #f1f1f1;
 }
