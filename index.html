@@ -9,7 +9,7 @@
 </head>
     
 <body>
-    <nav class="top-nav">
+    <nav>
 
         <ul>
             <li><a href="#home">Home</a></li>
@@ -17,17 +17,6 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#certifications">Certifications</a></li>
             <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <button class="side-nav-toggle" onclick="toggleSideNav()"><i class="fas fa-bars"></i></button>
-
-    <nav class="side-nav" id="side-nav">
-        <ul>
-            <li><a href="#home" onclick="toggleSideNav()">Home</a></li>
-            <li><a href="#about" onclick="toggleSideNav()">About</a></li>
-            <li><a href="#skills" onclick="toggleSideNav()">Skills</a></li>
-            <li><a href="#certifications" onclick="toggleSideNav()">Certifications</a></li>
-            <li><a href="#contact" onclick="toggleSideNav()">Contact</a></li>
         </ul>
     </nav>
 
@@ -154,17 +143,7 @@
             </div>
         </div>
     </section>
-    <script>
-         function toggleSideNav() {
-            var sideNav = document.getElementById('side-nav');
-            sideNav.classList.toggle('open');
-        }
-         document.querySelectorAll('.side-nav ul li a').forEach(function(link) {
-        link.addEventListener('click', function() {
-            toggleSideNav();
-        });
-    });
-    </script>
+    
     
 </body>
 </html>
